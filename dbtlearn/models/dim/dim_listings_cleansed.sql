@@ -11,6 +11,7 @@ SELECT
     END minimum_nights,
     host_id,
     REPLACE(
+        price_str,
         '$'
     ) :: NUMBER(
         10, 
@@ -19,4 +20,4 @@ SELECT
     created_at, 
     updated_at
 FROM
-    src_lisitings
+    src_listings
