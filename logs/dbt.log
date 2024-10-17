@@ -1,0 +1,152 @@
+[0m21:08:11.683114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172BD80F260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172BEF23BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172BC2C8470>]}
+
+
+============================== 21:08:11.691549 | 88a5f065-5bd3-4976-8b04-15916218606e ==============================
+[0m21:08:11.691549 [info ] [MainThread]: Running with dbt=1.8.7
+[0m21:08:11.692538 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\adity\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dbtlearn', 'send_anonymous_usage_stats': 'True'}
+[0m21:08:11.728580 [debug] [MainThread]: Starter project path: C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\include\starter_project
+[0m21:08:11.761787 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:08:11.762793 [info ] [MainThread]: Setting up your profile.
+[0m21:11:09.493668 [error] [MainThread]: Encountered an error:
+
+[0m21:11:09.515534 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:11:09.521537 [debug] [MainThread]: Command `dbt init` failed at 21:11:09.520434 after 178.00 seconds
+[0m21:11:09.525433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172BECC7EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172C0A860F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000172C0718EC0>]}
+[0m21:11:09.527617 [debug] [MainThread]: Flushing usage events
+[0m21:11:15.987744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EC1AD2540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EC16921E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EC25D9430>]}
+
+
+============================== 21:11:15.995497 | 1aec217c-7364-4013-9a76-f2c655bf789d ==============================
+[0m21:11:15.995497 [info ] [MainThread]: Running with dbt=1.8.7
+[0m21:11:15.996398 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\adity\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init dbtlearn', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:11:16.030526 [info ] [MainThread]: A project called dbtlearn already exists here.
+[0m21:11:16.031503 [debug] [MainThread]: Command `dbt init` succeeded at 21:11:16.031503 after 0.21 seconds
+[0m21:11:16.032501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EC2325550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EC25D9730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014EC25D9430>]}
+[0m21:11:16.032501 [debug] [MainThread]: Flushing usage events
+[0m21:13:30.321866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028185FF3440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028185FF0770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028185FF35C0>]}
+
+
+============================== 21:13:30.328652 | 267d50a4-d6e5-4829-9fb7-5f238ac86114 ==============================
+[0m21:13:30.328652 [info ] [MainThread]: Running with dbt=1.8.7
+[0m21:13:30.329653 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\adity\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:13:48.765591 [debug] [MainThread]: Starter project path: C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\include\starter_project
+[0m21:13:48.867093 [info ] [MainThread]: 
+Your new dbt project "dbt_" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:13:48.868093 [info ] [MainThread]: Setting up your profile.
+[0m21:31:08.411581 [info ] [MainThread]: Profile dbt_ written to C:\Users\adity\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:31:08.538838 [debug] [MainThread]: Command `dbt init` succeeded at 21:31:08.536288 after 1058.71 seconds
+[0m21:31:08.554048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028186425DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028185CC7830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000281866A5640>]}
+[0m21:31:08.564438 [debug] [MainThread]: Flushing usage events
+[0m22:46:47.164604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D17F517F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D1A73F830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D1A15BE30>]}
+
+
+============================== 22:46:47.171651 | 1362f2fa-2a78-46f6-9bc3-81cccc5e9fdf ==============================
+[0m22:46:47.171651 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:46:47.173604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\adity\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:47:05.526981 [debug] [MainThread]: Starter project path: C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\include\starter_project
+[0m22:47:05.558936 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:47:05.559935 [info ] [MainThread]: Setting up your profile.
+[0m22:50:53.956177 [info ] [MainThread]: Profile dbtlearn written to C:\Users\adity\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:50:54.019575 [debug] [MainThread]: Command `dbt init` succeeded at 22:50:54.019575 after 247.10 seconds
+[0m22:50:54.050709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D19CE11C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D19CE13A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D1AA0A7B0>]}
+[0m22:50:54.050709 [debug] [MainThread]: Flushing usage events
+[0m22:53:28.493576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3A6E8230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3ACAE1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3ACAD970>]}
+
+
+============================== 22:53:28.493576 | 35ecabd6-d129-4f23-be70-bfc4cb2de70f ==============================
+[0m22:53:28.493576 [info ] [MainThread]: Running with dbt=1.8.7
+[0m22:53:28.493576 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\adity\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init dbtlearn', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:53:28.524837 [debug] [MainThread]: Starter project path: C:\Users\adity\OneDrive\Desktop\dbt_course\dbt_venv\Lib\site-packages\dbt\include\starter_project
+[0m22:53:28.540459 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:53:28.540459 [info ] [MainThread]: Setting up your profile.
+[0m22:54:48.983801 [info ] [MainThread]: Profile dbtlearn written to C:\Users\adity\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:54:48.983801 [debug] [MainThread]: Command `dbt init` succeeded at 22:54:48.983801 after 80.66 seconds
+[0m22:54:48.983801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3A954B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3C042F00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3B59A4B0>]}
+[0m22:54:48.999425 [debug] [MainThread]: Flushing usage events
